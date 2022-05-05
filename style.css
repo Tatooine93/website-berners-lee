@@ -12,7 +12,7 @@ main {
     margin: auto;
     margin-top: 35px;
     margin-bottom: 35px;
-    max-width: 500px; /*45% ou 500px*/
+    max-width: 550px; /*45% ou 500px*/
 }
 
 section {
@@ -26,18 +26,20 @@ section {
 
 h1 {
     color: #dd5555;
-    font-weight: bolder;
+    font-weight: 800;
     text-align: center;
 }
 
 h2 {
     color: #7d7d7d;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: larger;
     text-align: center;
 }
 
 h3 {
     color: #7d7d7d;
+    font-weight: 600;
     text-align: center;
 }
 
@@ -79,7 +81,7 @@ strong {
     font-weight: bold;
 }
 
-.presentation > a:hover {
+.presentation  a:hover {
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25) inset,
                 0 -5px 5px rgba(0, 0, 0, 0.25) inset;
 
@@ -87,30 +89,36 @@ strong {
 
 /* Social Media */
 
-.socialMedia > * {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
 ul {
+    text-align: center;
     list-style: none;
     padding: 30px;
+    display: flex;
+    justify-content: center;
+
 }
 
 li {
     width:fit-content;
-    display: inline-block;
+    
     margin: 30px;
 }
 
-li > * {
+.socialMedia a {
+    display: flex;
+    flex-direction: column-reverse;
     color: #cccccc;
-    display: block;
+    margin: auto;
 }
 
+.socialMedia a:hover{
+    color: #1773ea;
+}
+
+.fa {
+    margin-bottom: 10px;
+    scale: 200%;
+}
 
 /* Article Movies */
 
@@ -125,7 +133,7 @@ article {
 
 .articlesMovies > h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 article > a > * {
